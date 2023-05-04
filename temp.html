@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table id="tbProduct">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let arrs = [
+            {
+                id: 1,
+                title: 'title 01',
+                category: 'cate 01'
+            },
+            {
+                id: 2,
+                title: 'title 02',
+                category: 'cate 02'
+            },
+            {
+                id: 3,
+                title: 'title 03',
+                category: 'cate 03'
+            },
+            {
+                id: 4,
+                title: 'title 04',
+                category: 'cate 04'
+            }
+        ]
+
+        function renderContent(obj) {
+            return `
+                <tr>
+                    <td>${obj.id}</td>
+                    <td>${obj.title}</td>
+                    <td>${obj.category}</td>
+                    <td>
+                        <button onclick="removeProduct(${obj.id})">
+                            Delete
+                        </button>    
+                    </td>
+                </tr>
+            `
+        }
+
+        function removeProduct(id) {
+            arrs = arrs.filter(item => item.id != id);
+            let elem = document.querySelector('#tbProduct tbody');
+            elem.innerHTML = "";
+            drawContent();
+        }
+
+        function drawContent() {
+            let elem = document.querySelector('#tbProduct tbody');
+            arrs.forEach(item => {
+                let str = renderContent(item);
+                elem.innerHTML += str;
+            })
+        }
+
+        drawContent();
+    </script>
+</body>
+</html>

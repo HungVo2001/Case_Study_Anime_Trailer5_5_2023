@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Anime Movie</title>
+    <link rel="stylesheet" href="slide.css">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div id="videos">
+            
+
+        </div>
+        <!-- <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>Movie Akaza</h3>
+                    <p>9 Solo Leveling Is A Modern Fantasy Story
+                        Loosely defined as a fantasy story (or a world with fantasy elements) based in the modern world,
+                        Solo Leveling is a perfect example of a modern fantasy story manhwa.
+                        Modern South Korea finds itself in a world plagued by monster-spawning portals, called Dungeons.
+                    </p>
+                    <a href="#" class="btn">Next movie</a>
+                </div>
+                <video src="video/demonslayer2.mp4"  autoplay loop muted></video>
+            </div>
+        </div> -->
+
+        
+        <div id="next" onclick="next()">&#10095;</div>
+        <div id="prev" onclick="prev()">&#10094;</div>
+        
+    </div>
+    
+
+    <script src="./script.js"></script>
+
+    <script>
+
+      
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+
+        function next() {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+
+        }
+
+        function prev() {
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+        
+    </script>
+</body>
+
+</html>

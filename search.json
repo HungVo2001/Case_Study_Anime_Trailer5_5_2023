@@ -1,0 +1,86 @@
+[
+    {
+        "name" : "Solo Loveling: Wallpaper",
+        "hot" : 7.0,
+        "year" : "2023",
+        "picture" : "https://pbs.twimg.com/media/Ex3U5XeVcAExrNg.jpg:large",
+        "genre" : "Action",
+        
+        "video" : "video/demonslayer2.mp4"
+    },
+    {
+        "name" : "Naruto-Season2",
+        "hot" : 8.0,
+        "year" : "2023",
+        "picture" : "https://i.pinimg.com/736x/07/1b/5f/071b5fd576ccac9086f2a3be163fc795.jpg",
+        "genre" : "Action",
+        
+        "video" : "video/Kimetsu no yaiba.mp4"
+    },
+    {
+        "name" : "Pokemon-Ending",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://pokemonviet.com/wp-content/uploads/2022/03/ss28.jpg",
+        "genre" : "Action",
+      
+        "video" : "video/videoplayback2.mp4"
+        
+    },
+    {
+        "name" : "Kimestu no yaiba -Demon Slayer",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://i.pinimg.com/originals/05/56/82/0556829ae190139fc30ce04b5e0ba606.jpg",
+        "genre" : "Action",
+        
+        "video" : "video/jujustukaisen.mp4"
+        
+    },
+    {
+        "name" : "Onepiece - Red",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://i.pinimg.com/550x/c1/56/14/c15614ec684700e14f5b5042da38c0c1.jpg",
+        "genre" : "Action",
+        
+        "video" : "video/demon.mp4"
+    },
+    {
+        "name" : "Songoku - World",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY3sBsKKZYn67nKY5Pp1IzY7aoxXTGnsDz-X_aLofC4bryq-u2",
+        "genre" : "Action",
+       
+        "video" : "video/goku.mp4"
+    },
+    {
+        "name" : "Yugio - Trailer",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://i.pinimg.com/originals/09/61/37/096137a98b3ec193f61b5ce3cbdf23d8.jpg",
+        "genre" : "Action",
+  
+        "video" : "video/sabel alter.mp4"
+    },
+    {
+        "name" : "Jujustu Kaisen",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetkpViWbXUlcFeCydfzdSp2-VUQsLUzKjwiLoypMe0aAdkUyy",
+        "genre" : "Action",
+       
+        "video" : "video/jujustukaisen.mp4"
+    },
+    {
+        "name" : "Kimestu no Yaiba - Special",
+        "hot" : 9.0,
+        "year" : "2023",
+        "picture" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq47-6GrgtIutcwIywiyemSsZL35IWKSfpKtHwVCBsyVaendea",
+        "genre" : "Action",
+     
+        "video" : "video/jujustukaisen.mp4"
+    }
+    
+]

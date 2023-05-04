@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Delicious Handrawn', cursive;
+    /* background: #40D3DC; */
+}
+
+/* header{
+    background: url(https://images2.alphacoders.com/100/thumb-1920-1007550.jpg) no-repeat center center/cover;
+} */
+
+header{
+
+    width: 80%;
+    height: 90%;
+    position: relative;
+    box-shadow: 3px 15px 30px -2px black;
+    overflow: hidden;
+    border-radius: 30px;
+    /* border: 1px solid red; */
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://images2.alphacoders.com/100/thumb-1920-1007550.jpg') no-repeat center center/cover;
+    opacity: .9;
+    z-index: -1;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0b090f);
+    z-index: -1;
+}
+
+header video{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 10%;
+    z-index: -1;
+    /* border: 1px solid red; */
+}
+
+header section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid yellow; */
+
+}
+
+header section .logo{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+header section .logo img{
+    width: 140px;
+    margin: -30px;
+    padding: 5px -10px;
+    
+}
+
+header section .logo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header section .logo ul li{
+    text-decoration: none;
+    color: rgb(19, 48, 211);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 50px;
+   
+    
+    
+}
+
+header section .logo li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    transition: .3 linear;
+   
+}
+
+header section .logo li a:hover{
+    color: red;
+    font-weight: lighter;
+   
+}
+
+header section .search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+header section .search input{
+   
+    padding: 3px 10px;
+    margin-right: 10px;
+    background: rgb(221, 203, 203);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: rgb(230, 111, 160);
+    font-weight: bolder;
+    
+ 
+    /* overflow: hidden; */
+    
+}
+
+header section .search input::placeholder{
+    color: aqua;
+
+   
+}
+
+
+
+header section .search img{
+    height: 30px;
+   
+    
+   
+}
+
+header section .search .box_search{
+    width: 350px;
+    height: 220px;
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    overflow-y: auto;
+    z-index: 1000;
+    /* border: 1px solid red; */
+   
+}
+
+header section .search .box_search::-webkit-scrollbar{
+    width: 20px;
+    background: rgb(248, 9, 9);
+    border-radius: 20px;
+    visibility: hidden;
+   
+}
+
+header section .search .box_search ::-webkit-scrollbar-thumb{
+    width: 20px;
+    background: rgb(218, 241, 11);
+    border-radius: 20px;
+    visibility: hidden;
+    
+}
+
+header section .search .box_search:hover::-webkit-scrollbar{
+    visibility:  visible;
+    
+}
+
+
+header section .search .box_search:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+    
+}
+
+
+header section .search .box_search .item{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    text-decoration: none;
+    padding: 0;
+    margin-bottom: 5px;
+   
+   
+}
+
+header section .search .box_search .item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 6px;
+    background: rgb(45, 88, 45);
+    
+
+}
+
+header section .search .box_search .item img{
+    width: 40px;
+    height: 90%;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+header section .search .box_search .item .next{
+    margin-left: 7px;
+    font-size: 17px;
+}
+
+
+header section .search .box_search .item .next h3{
+    width: 250px;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+
+header section .search .box_search .item .next p{
+    font-size: 20px;
+}
+
+header section .search .box_search .item .next span{
+    background: rgb(247, 41, 52);
+    border-radius: 25px;
+    color: black;
+    padding: 0px 4px;
+    margin: 0px 5px;
+    font-weight: 580px;
+}
+
+header .product{
+    position: relative;
+    color: rgb(183, 243, 223);
+    margin-top: 50px;
+    padding-left: 40px;
+   
+    
+}
+
+
+header .product h1{
+    font-size: 50px;
+    color: rgb(54, 103, 146);
+    margin-top: -60px;
+   
+    
+    
+  
+
+}
+
+header .product p{
+    width: 450px;
+    margin-top: 15px;
+    font-size: 20px;
+    
+    
+    
+}
+
+header .product .highlight{
+    align-items: center;
+    margin-top: 15px;
+    display: flex;
+    
+    
+   
+}
+
+header .product .highlight h6{
+    margin-right: 15px;
+    font-size: 20px;
+    color: red;
+    
+    
+}
+
+header .product .highlight h5{
+    margin-right: 15px;
+    font-size: 20px;
+    color: red;
+   
+}
+
+header .product .highlight h4{
+    margin-right: 15px;
+    font-size: 20px;
+    color: red;
+    
+}
+
+header .product .highlight h3{
+    margin-right: 15px;
+    font-size: 20px;
+    color: red;
+  
+}
+
+header .product .highlight h3 span{
+    padding: 0px 4px;
+    background: rgb(194, 238, 37);
+    color: black;
+    border-radius: 25px;
+    margin:  0px 5px 0px 5px;
+    margin-right: 10px;
+    font-weight: 550px;
+    
+}
+
+
+header .product .highlight h3 i{
+    margin-right: 5px;
+}
+
+header .product .movie{
+    margin-top: 165px;
+    margin-left: 30px;
+    color: red;
+    /* border: 1px solid red; */
+    
+    
+  
+    
+}
+
+header .product .movie a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600px;
+    background: linear-gradient(rgb(94, 200, 233));
+    color: rgb(42, 21, 121);
+    padding: 2px 15px;
+    margin-right: 20px;
+    border-radius: 40px;
+    animation: play-and-dowload 1.5s infinite ease-in;
+   
+    
+    
+
+}
+
+/* header .product .movie a:hover{
+    cursor: pointer;
+} */
+
+@keyframes play-and-dowload{
+    0%{
+        rotate: 10deg;
+        background: linear-gradient(30deg, #d5dbe6, #d8e6d5, #491d6c,#500706);
+        border-radius: 200px;
+    }
+    20%{
+        rotate: 60deg;
+        background: linear-gradient(60deg, #d5dbe6, #47b92d, #8644bd,#b45b59);
+        border-radius: 200px;
+    }
+    40%{
+        rotate: 130deg;
+        background: linear-gradient(100deg, #3661b1, #47b92d, #140520,#ac0b08);
+        border-radius: 200px;
+    }
+    60%{
+        rotate: 190deg;
+        background: linear-gradient(140deg, #020f25, #750fc9, #c41681,#fc1410);
+        border-radius: 200px;
+    }
+    80%{
+        rotate: 260deg;
+        background: linear-gradient(190deg, #020f25, #750fc9, #c41681,#fc1410);
+        border-radius: 200px;
+    }
+    100%{
+        rotate: 360deg;
+        background: linear-gradient(240deg, #020305, #073033, #75054a,#d80b08);
+        border-radius: 200px;
+    }
+}
+
+header nav{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: auto;
+    color: #33e0f7;
+    padding: 0px 50px ;
+    /* border: 1px solid red; */
+    
+
+  
+}
+
+
+header nav .usefuls{
+    width: 100%;
+    height: 210px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+    
+    
+    
+   
+}
+
+header nav .usefuls::-webkit-scrollbar{
+    display: none;
+   
+    
+}
+
+header nav .usefuls .useful{
+    background: none;
+    position: relative;
+    border-radius: 60px;
+    min-width: 130px;
+    height: 180px;
+    margin-right: 10px;
+    transition: .5s linear;
+    
+    
+}
+
+header nav h3{
+    font-size: 30px;
+    color: #42c7cc;
+    font-weight: 900;
+    font-style: italic;
+    
+    
+       
+}
+
+header nav .bi-arrow-left-circle-fill , 
+.bi-arrow-right-circle-fill{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 35px;
+    height: 35px;
+    background: rgb(255, 62, 3);
+    color: rgb(31, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .5 linear;
+    z-index: 9999;
+    opacity: 0;
+    
+    
+    
+}
+
+header nav .bi-arrow-right-circle-fill{
+    left: unset;
+    right: 3%;
+    
+}
+
+header nav .usefuls .useful .films{
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+    position: relative;
+    
+   
+    
+    
+    
+}
+
+header nav:hover .bi-arrow-left-circle-fill{
+    opacity: 1;
+    transition: 1s;
+   
+  
+}
+
+header nav:hover .bi-arrow-right-circle-fill{
+    opacity: 1;
+    transition: 1s;
+}
+
+header nav .usefuls .useful:hover{
+    width: 100px;
+    height: 200px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    transition: all 1.0s ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 3px 3px 30px 5px rgba(231, 235, 15, 0.67);
+    -moz-box-shadow:    3px 3px 30px 5px rgba(12, 226, 12, 0.67);
+    box-shadow:         3px 3px 30px 5px rgba(255, 0, 34, 0.67);
+}
+
+/* header nav .box{
+    width: 19%;
+    height: 20%;
+    position: absolute;
+    display: flex; */
+/* } */
+
+/* #nav{
+   
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    
+    
+} */
+/* #nav>.usefuls{
+    float: left;
+    width: 11%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    white-space: nowrap;
+} */
+
+
+
+
+
+/* .header #next,
+.header #prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50px);
+    z-index: 100;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    height: 60px;
+    width: 50px;
+    line-height: 55px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+
+.header #next{
+    right: 0;
+}
+
+.header #prev{
+    left: 0;
+} */
+
+
+
+
+
